@@ -1,0 +1,43 @@
+# KOReader Reference & extracted files (local only)
+frontend/
+ffi/
+assets/
+plugins/
+defaults.lua
+base.apk
+*.apk
+*.7z
+acl-repair/
+AGENTS.md
+
+# OpenCode & local tools
+opencode.json
+opencode.jsonc
+photocraft*
+*.exe
+.playwright-mcp/
+
+# Media & Images (no images in repository)
+*.svg
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.ico
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.zip
+*.tar.gz
+*.tmp
+*.bak
+*.orig
+*.log

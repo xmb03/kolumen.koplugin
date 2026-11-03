@@ -1,0 +1,41 @@
+name: Release KOReader Plugin
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Package Plugin Archive
+        run: |
+          mkdir -p build/kolumen.koplugin
+          cp -r _meta.lua \
+                main.lua \
+                i18n.lua \
+                l10n \
+                LICENSE \
+                README.md \
+                README_RU.md \
+                build/kolumen.koplugin/
+          cd build
+          zip -r ../kolumen.koplugin.zip kolumen.koplugin
+          cd ..
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: kolumen.koplugin.zip
+          draft: false
+          prerelease: false
+          generate_release_notes: true
