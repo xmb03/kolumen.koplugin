@@ -18,6 +18,12 @@ Read this in [English](README.md).
 
 ---
 
+<p align="center">
+  <img src="assets/kolumen-showcase.png" alt="KOlumen Showcase" width="100%">
+</p>
+
+---
+
 ## Описание проекта
 
 В читалке KOReader стандартная регулировка яркости привязана к крайним границам экрана. На современных смартфонах и планшетах свайпы вдоль кромок постоянно конфликтуют с:
@@ -72,6 +78,18 @@ Read this in [English](README.md).
 
 ## Установка
 
+### Способ 1: Через плагин KOReader AppStore (Рекомендуется)
+
+Если на вашем устройстве установлен каталог плагинов [AppStore для KOReader](https://github.com/omer-faruq/appstore.koplugin):
+1. Откройте KOReader и перейдите в **Поиск** / **Инструменты** -> **App Store**.
+2. Введите в строке поиска `kolumen` (или найдите в общем списке плагинов сообщества).
+3. Выберите **KOlumen** и нажмите **Install** (Установить).
+4. Перезапустите читатель KOReader по запросу.
+
+---
+
+### Способ 2: Ручная установка
+
 1. Скачайте архив `kolumen.koplugin.zip` из последнего [релиза на GitHub](https://github.com/xmb03/kolumen.koplugin/releases/latest).
 2. Подключите устройство к компьютеру по USB или воспользуйтесь файловым менеджером на самом устройстве.
 3. Распакуйте архив так, чтобы папка `kolumen.koplugin` оказалась прямо в папке `plugins/` читалки:
@@ -111,6 +129,8 @@ kolumen.koplugin/
 ├── .github/
 │   └── workflows/
 │       └── release.yml       <- Автоматическая сборка релизов GitHub и архива ZIP
+├── assets/
+│   └── kolumen-showcase.png  <- Обложка и превью плагина
 ├── l10n/
 │   └── ru.lua                <- Файл русской локализации
 ├── _meta.lua                 <- Манифест плагина (имя, версия, категория)

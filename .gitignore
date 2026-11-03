@@ -1,8 +1,8 @@
 # KOReader Reference & extracted files (local only)
 frontend/
 ffi/
-assets/
 plugins/
+koreader-reference/
 defaults.lua
 base.apk
 *.apk
@@ -13,18 +13,12 @@ AGENTS.md
 # OpenCode & local tools
 opencode.json
 opencode.jsonc
+photocraft/
 photocraft*
 *.exe
+*.pcraft
+*.psd
 .playwright-mcp/
-
-# Media & Images (no images in repository)
-*.svg
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.webp
-*.ico
 
 # OS and IDE files
 .DS_Store

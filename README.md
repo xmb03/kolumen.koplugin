@@ -18,6 +18,12 @@ Read this in [Russian (Русский)](README_RU.md).
 
 ---
 
+<p align="center">
+  <img src="assets/kolumen-showcase.png" alt="KOlumen Showcase" width="100%">
+</p>
+
+---
+
 ## Overview
 
 In [KOReader](https://github.com/koreader/koreader), native brightness gestures are typically positioned along the extreme left or right borders of the screen. While functional on dedicated e-readers with hardware bezels, this design introduces frequent conflicts on modern Android smartphones and tablets:
@@ -75,12 +81,22 @@ In [KOReader](https://github.com/koreader/koreader), native brightness gestures 
 
 ## Installation
 
-### Installation Steps
+### Method 1: Via KOReader AppStore (Recommended)
+
+If you have the [KOReader AppStore](https://github.com/omer-faruq/appstore.koplugin) installed on your device:
+1. Open KOReader and go to **Search** / **Tools** -> **App Store**.
+2. Search for `kolumen` (or browse the community plugins list).
+3. Select **KOlumen** and tap **Install**.
+4. Restart KOReader when prompted.
+
+---
+
+### Method 2: Manual Installation
 
 1. Download `kolumen.koplugin.zip` from the latest [GitHub Release](https://github.com/xmb03/kolumen.koplugin/releases/latest).
 2. Connect your device to your computer via USB, or use a file manager on your device.
 3. Extract `kolumen.koplugin.zip` so that the `kolumen.koplugin` folder is placed directly inside the `plugins/` directory of your KOReader installation.
-4. Perform a complete restart of KOReader.
+4. Perform a complete restart of KOReader (**Top Menu -> Exit**, then relaunch).
 5. Open any document and swipe vertically in the center of the display.
 
 ### Device Directory Reference
@@ -128,6 +144,8 @@ kolumen.koplugin/
 ├── .github/
 │   └── workflows/
 │       └── release.yml       <- Automated GitHub release & ZIP packager
+├── assets/
+│   └── kolumen-showcase.png  <- Showcase banner
 ├── l10n/
 │   └── ru.lua                <- Russian localization catalog
 ├── _meta.lua                 <- Plugin manifest (name, version, category)
