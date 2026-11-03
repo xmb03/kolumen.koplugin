@@ -26,13 +26,11 @@ Read this in [Russian (Русский)](README_RU.md).
 
 ## Overview
 
-In [KOReader](https://github.com/koreader/koreader), native brightness gestures are typically positioned along the extreme left or right borders of the screen. While functional on dedicated e-readers with hardware bezels, this design introduces frequent conflicts on modern Android smartphones and tablets:
-* Border swipes trigger Android's system "Back" navigation gesture from the edges.
-* Top-edge drags accidentally pull down the Android notification shade and quick settings.
-* Bottom-edge drags conflict with gesture navigation bars and "Home" actions.
-* Corner touches interfere with page-turning taps.
+In standard [KOReader](https://github.com/koreader/koreader), changing the screen brightness is only possible through the settings menu: you have to interrupt your reading, open menus, and spend time searching for the brightness parameter every time.
 
-**KOlumen** repositions brightness adjustment into a dedicated, configurable vertical corridor in the center of the screen. With an adaptive zero-jump anchoring engine, real-time feedback, and full E-ink anti-ghosting compensation, it provides intuitive and friction-free illumination control.
+The **KOlumen** plugin solves this problem: it allows you to adjust brightness natively and instantly by simply sliding your finger vertically across the screen while reading — without any need to dig through menus or search for parameters in settings.
+
+Additionally, the gesture is placed in a configurable central corridor of the display, avoiding conflicts with system navigation (such as edge "Back" gestures, notification shades, and home bars) or page-turning zones. Featuring an adaptive zero-jump anchoring engine, real-time feedback, and full E-ink anti-ghosting compensation, KOlumen delivers an intuitive, effortless illumination control experience.
 
 ---
 
